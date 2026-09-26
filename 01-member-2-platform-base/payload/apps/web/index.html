@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VocabMaster</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/overrides.css">
+  <link rel="stylesheet" href="styles/dashboard.css?v=20260915-2">
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260915-1">
+  <link rel="stylesheet" href="styles/vocabulary.css?v=20260916-4">
+  <link rel="stylesheet" href="styles/features.css?v=20260916-1">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard" aria-label="VocabMaster">
+        <img src="assets/figma/logo.svg" alt=""><strong>VocabMaster</strong>
+      </a>
+      <nav class="nav-menu" aria-label="Điều hướng chính">
+        <button class="nav-item active" data-view="dashboard"><img src="assets/figma/nav-dashboard.svg" alt=""><span>Trang chủ</span></button>
+        <button class="nav-item" data-view="dictionary"><img src="assets/figma/nav-dictionary.svg" alt=""><span>Từ điển & dịch</span></button>
+        <button class="nav-item" data-view="vocabulary"><img src="assets/figma/nav-vocabulary.svg" alt=""><span>Bộ từ vựng & Leitner</span></button>
+        <button class="nav-item" data-view="quiz"><img src="assets/figma/nav-quiz.svg" alt=""><span>Kiểm tra</span></button>
+        <button class="nav-item" data-view="analytics"><img src="assets/figma/nav-analytics.svg" alt=""><span>Phân tích tiến độ</span></button>
+        <button class="nav-item" data-view="settings"><img src="assets/figma/nav-settings.svg" alt=""><span>Cài đặt</span></button>
+      </nav>
+      <button class="profile-card" data-view="settings">
+        <img src="assets/figma/avatar.svg" alt="" class="avatar">
+        <span><strong id="sidebarName">Thảo Nguyên</strong><small>Hồ sơ</small></span>
+        <img src="assets/figma/nav-settings.svg" alt="" class="profile-settings">
+      </button>
+    </aside>
+    <header class="topbar">
+      <label class="global-search"><img src="assets/figma/search.svg" alt=""><input id="globalSearch" placeholder="Tìm kiếm từ vựng hoặc chủ đề..."></label>
+      <div class="top-widgets">
+        <span class="streak"><img src="assets/figma/flame.svg" alt=""><strong id="sessionBadge">Phiên 1</strong></span>
+        <button class="icon-button" aria-label="Thông báo"><img src="assets/figma/bell.svg" alt=""></button>
+        <button class="icon-button" aria-label="Gợi ý học tập"><img src="assets/figma/lightbulb.svg" alt=""></button>
+        <button class="top-avatar" data-view="settings"><img src="assets/figma/top-profile.svg" alt=""></button>
+      </div>
+    </header>
+    <main id="view" class="content" aria-live="polite"></main>
+  </div>
+
+  <div id="modal" class="modal" hidden><div class="modal-backdrop" data-close-modal></div><section class="modal-card" id="modalContent"></section></div>
+  <div id="toast" class="toast" role="status"></div>
+  <input id="importFile" type="file" accept="application/json" hidden>
+  <script src="scripts/core.js"></script>
+  <script src="scripts/features/dashboard.js"></script>
+  <script src="scripts/features/dictionary.js"></script>
+  <script src="scripts/features/vocabulary.js"></script>
+  <script src="scripts/features/study.js"></script>
+  <script src="scripts/features/quiz.js"></script>
+  <script src="scripts/features/analytics.js"></script>
+  <script src="scripts/features/settings.js"></script>
+  <script src="scripts/ui-enhancements.js?v=20260919-2"></script>
+  <script src="scripts/bootstrap.js"></script>
+</body>
+</html>

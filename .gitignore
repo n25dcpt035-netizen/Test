@@ -1,0 +1,27 @@
+# Build output
+build/
+runtime/
+bin/
+obj/
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+
+# Local environments
+.venv-translate/
+.python-version
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+.DS_Store
+
+# Runtime data backups
+*.tmp
+*.bak
+

@@ -1,0 +1,30 @@
+[hidden] { display: none !important; }
+
+.sense-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 14px 0;
+}
+
+.sense-tab {
+  border: 1px solid #d6e5f2;
+  background: #fff;
+  color: #49657d;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 11px;
+}
+
+.sense-tab.active {
+  border-color: var(--blue);
+  background: #eaf4ff;
+  color: var(--blue);
+  font-weight: 750;
+}
+
+.dictionary-meta {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
