@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="notification-bell">
+<rect x="0.5" y="0.5" width="35" height="35" rx="17.5" fill="#F8FAFC"/>
+<rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="#E2E8F0"/>
+<path id="Vector" d="M25 25C25 22.8522 21.866 21.1111 18 21.1111C14.134 21.1111 11 22.8522 11 25M18 18.7778C15.5838 18.7778 13.625 17.0367 13.625 14.8889C13.625 12.7411 15.5838 11 18 11C20.4162 11 22.375 12.7411 22.375 14.8889C22.375 17.0367 20.4162 18.7778 18 18.7778Z" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
